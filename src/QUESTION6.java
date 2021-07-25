@@ -16,7 +16,7 @@ public class QUESTION6 {
 		System.out.println("enter user id \n");
 		userid1=sc.nextLine();
 		System.out.println("enter password");
-		pass1=sc.next();
+		pass1=sc.nextLine();
 		switch(userid1)
 		{
 		case "piyush@gmail.com":
@@ -30,6 +30,7 @@ public class QUESTION6 {
 				count++;
 				System.out.println("PRESS 1 TO Try again , 0 to exit! \n attempts left:"+(3-count));
 				x=sc.nextInt();
+				sc.nextLine();
 				break;
 			}
 			break;
@@ -37,11 +38,12 @@ public class QUESTION6 {
 			count++;
 			System.out.println("PRESS 1 TO Try again, 0 to exit! \n attempts left:"+(3-count));
 			x=sc.nextInt();
+			sc.nextLine();
 			break;
 		}
 		}
 		System.out.println("Contact admin!!");
-
+sc.close();
 	}
 
 }
